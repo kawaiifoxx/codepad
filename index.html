@@ -1,0 +1,80 @@
+<!--DOCTYPE HTML-->
+ <html lang="en">
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import Google Font-->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Import custom css-->
+      <link type="text/css" rel="stylesheet" href="css/style.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+    </head>
+
+    <body>
+    <header>
+    </header>
+    <nav>
+    <div id="nav_bar_container">
+     <div class="nav-wrapper deep-purple accent-3"><a href="index.html" class="brand-logo" id="logo">Code Pad</a>
+       <ul class="hide-on-med-and-down">
+        <li><button class="waves-effect waves-light btn orange darken-3" id="opt_html">HTML</button></li>
+        <li><button class="waves-effect waves-light btn blue lighten-1" id="opt_css">CSS</button></li>
+         <li><button class="waves-effect waves-dark btn yellow lighten-1 black-text" id="opt_js">Javascript</button></li>
+         <li><button class="waves-effect waves-dark btn lime accent-2 black-text" id="opt_out">Output</button></li>
+         <li><a class="waves-effect waves-dark btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="This will reset workspace to its orignal state" id="opt_reset">Reset</a></li>
+      </ul>
+      
+    </div>
+     	
+    </div>
+    </nav>
+    <main>
+    <div class="row">
+    <div id="out_box" class="card-panel  teal accent-3 col s12">
+     <label for="iframe_area_out">Output:</label>
+     <iframe id="iframe_area_out">
+    </iframe>
+     </div>
+     <div id="html_container" class="col s4">
+     <div id="html_box" class="card-panel amber lighten-1">
+     <label>HTML:</label>
+     <textarea id="text_area_html">
+     <p>Hello World!</p>
+     <p id="testJs"></p>
+     </textarea>
+     </div>
+     </div>
+     <div id="css_container" class="col s4">
+     <div id="css_box" class="card-panel blue darken-1">
+       <label>CSS:</label>
+        <textarea id="text_area_css">p {color: green;
+        }
+        </textarea>
+     </div>
+     </div>
+     <div id="js_container" class="col s4">
+     <div id="js_box" class="card-panel lime accent-3">
+     <label for="text_area_js">Javascript:</label>
+     <textarea id="text_area_js">document.getElementById("testJs").innerHTML = "Hello from Javascript!";</textarea>
+     </div>
+     </div>
+    
+    </div>
+     
+    </main>
+    <footer class="page-footer deep-purple accent-3">
+          <div class="footer-copyright">
+            <div class="container"><a class="grey-text text-lighten-4" href="#!">© 2017 Shreyansh Gupta</a> <a class="grey-text text-lighten-4 right" href="#!">Credits</a></div>
+          </div>
+        </footer>
+    <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    </body>
+  </html>
+        
