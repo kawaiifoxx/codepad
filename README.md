@@ -1,2 +1,2 @@
 # codepad
-Very Very Very simple html editor .(Its Useless)
+Eye candy text editor.
